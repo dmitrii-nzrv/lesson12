@@ -5,4 +5,12 @@
 //  Created by Dmitrii Nazarov on 11.09.2024.
 //
 
-import Foundation
+import UIKit
+
+struct CollectionItem: Identifiable {
+    let id: String = UUID().uuidString
+    let image: String
+    var header: String? 
+    var name: String?
+    var text: String?
+}
